@@ -1,0 +1,34 @@
+<html>
+  <body>
+  <p>${VM_NAME},
+  <br><br>
+  There is a new voicemail in mailbox ${VM_MAILBOX}:</p>
+  <p>
+    <table>
+      <tr>
+        <th align="left">From (NAME):</th>
+        <td>${VM_CIDNAME}</th>
+      </tr>
+      <tr>
+        <th align="left">From (Number):</td>
+        <td><a href="tel://${VM_CIDNUM}">${VM_CIDNUM}</a></td>
+      </tr>
+      <tr>
+        <th align="left">Length:</td>
+        <td>${VM_DUR} seconds</td>
+      </tr>
+      <tr>
+        <th align="left">Date:</td>
+        <td>${VM_DATE}</td>
+      </tr>
+    </table>
+  </p>
+
+  <a href="http://<YOUR_SERVER>/Call.php?exten=PJSIP/${VM_MAILBOX}&number=${VM_CIDNUM}">
+         <button style="mybutton">Connect Call</button>
+  </a>
+
+  <p>Dial *98 to access your voicemail by phone.<br>
+
+  </body>
+</html>
