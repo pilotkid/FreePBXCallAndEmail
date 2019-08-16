@@ -1,0 +1,7 @@
+#!/bin/bash
+VALUE=$(cat)
+NEWVAL=$(sed 's/Content-Type: text\/plain/Content-Type: text\/html/g' <<< "$VALUE")
+
+echo "$NEWVAL" >> fileName
+
+echo "$NEWVAL" | /usr/sbin/sendmail -t -v
