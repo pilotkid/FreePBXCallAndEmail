@@ -1,6 +1,8 @@
 # FreePBXCallAndEmail
 Files to add to your Freepbx instance to allow HTML emails and click to call
 
+https://youtu.be/8P2_djhhloY
+
 # Call Via URL
 
 1) Login to the FreePBX dashboard
